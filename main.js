@@ -1,7 +1,9 @@
-const topright = document.querySelector('#topright');
+const topright = document.getElementById('topright');
 const topleft = document.querySelector('#topleft');
 const botright = document.querySelector('#botright');
 const botleft = document.querySelector('#botleft');
+
+const values = [topright.value, topleft.value, botright.value, botleft.value];
 
 topright.addEventListener("input", (event) => {
   let border = topright.value;
@@ -27,4 +29,9 @@ botleft.addEventListener("input", (event) => {
   document.getElementById('box').style.borderBottomLeftRadius = border + "px";
 });
 
+function copyText() {
+  const values = [topright.value, topleft.value, botright.value, botleft.value];
+  console.log(values);
+  
+}
 

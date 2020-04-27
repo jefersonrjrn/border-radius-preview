@@ -1,5 +1,46 @@
-#box {
-  margin: 50px 200px;
-  padding: 200px;
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(3, 32, 28);
+}
+
+.borderValues {
+  margin: 20px auto 0;
+  width: 50%;
+  min-width: 300px;
+  display: grid;
+  grid-template-columns: 40px 40px;
+  justify-content: space-between;
+}
+
+.borderValues input {
+  text-align: center;
+  color: aliceblue;
   border: 2px solid;
+  background: rgb(26, 114, 66);
+}
+
+.borderValues input::placeholder {
+  color: white;
+}
+
+#bot {
+margin-top: 0;
+}
+
+#box {
+  background: rgb(26, 114, 66);
+  text-align: center;
+  line-height: 150px;
+  margin: auto;
+  padding: 100px;
+  border: 2px solid;
+  height: 150px;
+  width: 30%;
+  max-width: 200px;
+  position: relative;
+}
+
+#box button {
+  border-radius: 10px;
 }

@@ -5,15 +5,25 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
   </head>
   <body>
+    <div class="borderValues">
+      <input type="text" name="borderValue" placeholder="Top" id="topleft">
+      <input type="text" name="borderValue" placeholder="Top" id="topright">
+    </div>
+    
+    <div id="box">
+      <div class="button">
+        <button type="submit" onclick="copyText()">Copy!</button>
+      </div>
+       
+    </div>
 
-    <input type="text" name="borderValue" placeholder="Top-Left" id="topleft">
-    <input type="text" name="borderValue" placeholder="Top-Right" id="topright">
-    <input type="text" name="borderValue" placeholder="Bottom-Left" id="botleft">
-    <input type="text" name="borderValue" placeholder="Bottom-Right" id="botright">
+    <div class="borderValues" id="bot">
+      <input type="text" name="borderValue" placeholder="Bot" id="botleft">
+      <input type="text" name="borderValue" placeholder="Bot" id="botright">
+    </div>
 
-    <button type="submit" onclick="copyText()">Copy!</button> 
+    
 
-    <div id="box"></div>
 
     <script src="main.js"></script>
   </body>

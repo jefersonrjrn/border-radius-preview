@@ -31,7 +31,17 @@ botleft.addEventListener("input", (event) => {
 
 function copyText() {
   const values = [topright.value, topleft.value, botright.value, botleft.value];
-  console.log(values);
+  var textArea = document.createElement("textarea");
+  var text = `border-top-left-radius: ${topleft.value}px; 
+    border-top-right-radius: ${topright.value}px; 
+    border-bottom-left-radius: ${botleft.value}px; 
+    border-bottom-right-radius: ${botright.value}px;`
   
+  document.body.appendChild(textArea);
+  textArea.value = text;
+  textArea.focus();
+  textArea.select();
+  document.execCommand("copy");
+  document.body.removeChild(textArea);
 }
 
